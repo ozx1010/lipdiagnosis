@@ -1,0 +1,23 @@
+@media screen and (min-width: 720px) {
+    .sp {
+        display: none !important;
+    }
+
+    .pc {
+        display: block !important;
+    }
+
+    .content, .content_question, .content_error {
+        & .content_str {
+            & p {
+                font-size: 20px;
+            }
+        }
+
+        & .content_arrow {
+            & p {
+                font-size: 15px;
+            }
+        }
+    }
+}

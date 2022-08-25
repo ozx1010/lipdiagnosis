@@ -1,0 +1,52 @@
+.header_top, .footer_top {
+    animation-name: fade-in-top-cnt;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.content, .content_question, .question_submit, .home {
+    animation-name: fade-in-top-cnt;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 0.7s;
+}
+
+.content_arrow, .content_str_btn {
+    animation-name: fade-in-arw-btn;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+
+.content_question {
+    animation-delay: 0.2s;
+}
+
+.question_submit, .home {
+    animation-delay: 1s;
+}
+
+@keyframes fade-in-top-cnt {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-arw-btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
