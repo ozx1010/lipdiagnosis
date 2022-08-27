@@ -44,6 +44,31 @@ a {
     background-color: #FFCCFF;
 }
 
+.result_str {
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+.lip_result {
+    margin-top: 30px;
+
+    &_name {
+        margin-bottom: 5px;
+    }
+}
+
+.easyLink-box {
+    margin: 5px auto !important;
+}
+
+.back_home {
+    margin-top: 70px;
+
+    & a {
+        text-decoration: underline;
+    }
+}
+
 .header, .header_top {
     width: 100%;
     background-color: #FF66FF;

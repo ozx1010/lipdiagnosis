@@ -22,17 +22,17 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //formのvalue格納
     $cosmetics = filter_input(INPUT_POST, 'cosmetics', FILTER_SANITIZE_STRING);
-    $color = filter_input(INPUT_POST, 'color', FILTER_SANITIZE_STRING);
+    // $color = filter_input(INPUT_POST, 'color', FILTER_SANITIZE_STRING);
     $texture = filter_input(INPUT_POST, 'texture', FILTER_SANITIZE_STRING);
     $type = filter_input(INPUT_POST, 'type', FILTER_SANITIZE_STRING);
 
     //空欄チェック
-    if ($cosmetics === null | $color === null | $texture === null | $type === null) {
+    if ($cosmetics === null | $texture === null | $type === null) {
         $error['ratio'] = 'blank';
     } else {
         //セッション変数にラジオボタンのvalueを格納
         $_SESSION['cosmetics'] = $cosmetics;
-        $_SESSION['color'] = $color;
+        // $_SESSION['color'] = $color;
         $_SESSION['texture'] = $texture;
         $_SESSION['type'] = $type;
 
@@ -77,16 +77,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                            <p>Q1.探したいコスメの種類</p>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="cosmetics" value="プチプラ" id="cosmetics_1">
-                            <label for="cosmetics_1">プチプラ</label>
+                            <input type="radio" name="cosmetics" value="デパコス" id="cosmetics_1">
+                            <label for="cosmetics_1">デパコス</label>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="cosmetics" value="デパコス" id="cosmetics_2">
-                            <label for="cosmetics_2">デパコス</label>
+                            <input type="radio" name="cosmetics" value="プチプラ" id="cosmetics_2">
+                            <label for="cosmetics_2">プチプラ</label>
                         </div>
                     </div>
                 </div>
-                <div class="question_wrapper">
+                <!-- <div class="question_wrapper">
                     <div class="question">
                         <div class="question_text">
                             <p>Q2.好みのリップの色合い</p>
@@ -112,11 +112,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <label for="color_5">ブラウン系</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="question_wrapper">
                     <div class="question">
                         <div class="question_text">
-                            <p>Q3.好みのリップの質感</p>
+                            <p>Q2.好みのリップの質感</p>
                         </div>
                         <div class="question_choice">
                             <input type="radio" name="texture" value="シアー" id="texture_1">
@@ -139,7 +139,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="question_wrapper">
                     <div class="question">
                         <div class="question_text">
-                            <p>Q4.好みのリップの種類</p>
+                            <p>Q3.好みのリップの種類</p>
                         </div>
                         <div class="question_choice">
                             <input type="radio" name="type" value="リップスティック" id="type_1">

@@ -14,18 +14,18 @@ if (!isset($_SESSION['diagnosis'])) {
 //db接続
 $db = dbconnect();
  //sql構文準備
-$stmt = $db->prepare('select maker, name, url from lips where cosmetics=? and color=? and texture=? and type=?');
+$stmt = $db->prepare('select maker, name, script from lips where cosmetics=? and texture=? and type=?');
 if (!$stmt) {
     die($db->error);
 }
  //sql実行
-$stmt->bind_param('ssss', $_SESSION['cosmetics'], $_SESSION['color'], $_SESSION['texture'], $_SESSION['type']);
+$stmt->bind_param('sss', $_SESSION['cosmetics'], $_SESSION['texture'], $_SESSION['type']);
 $success = $stmt->execute();
 if (!$success) {
     die($db->error);
 }
  //対象のメーカー、リップ名とurlの格納
-$stmt->bind_result($maker, $name, $url);
+$stmt->bind_result($maker, $name, $script);
 
 //アクセスチェックのリセット
 unset($_SESSION['diagnosis']);
@@ -51,14 +51,22 @@ unset($_SESSION['diagnosis']);
             <a href="."><img src="images/lip_diagnosis_header.png" alt=""></a>
         </div>
         <div class="content">
-            <p>あなたに合うリップは・・・</p>
+            <div class="result_str">
+                <p>あなたに合うリップは・・・</p>
+            </div>
             <?php while ($stmt->fetch()) { ?>
-            <div class="lip_example">
-                <p>▼<?php echo h($maker); ?> 『<?php echo h($name); ?>』</p>
-                <p>https://<?php  echo h($url);?></p>
+            <div class="lip_result">
+                <div class="lip_result_name">
+                    <p>▼ <?php echo h($maker); ?> 『<?php echo h($name); ?>』</p>
+                </div>
+                <?php $escape = h($script);
+                echo d($escape);
+                ?>
             </div>
             <?php } ?>
-            <a href=".">スタート画面に戻る</a>
+            <div class="back_home">
+                <a href=".">スタート画面に戻る</a>
+            </div>
         </div>
         <div class="footer_wrapper">
             <div class="footer">
