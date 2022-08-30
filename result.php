@@ -14,7 +14,7 @@ if (!isset($_SESSION['diagnosis'])) {
 //db接続
 $db = dbconnect();
  //sql構文準備
-$stmt = $db->prepare('select maker, name, script from lips where cosmetics=? and texture=? and type=?');
+$stmt = $db->prepare('select maker, name, product_name, product_id, product_jpg, product_info1, product_info2, msmaflink_id from lips where cosmetics=? and texture=? and type=?');
 if (!$stmt) {
     die($db->error);
 }
@@ -25,7 +25,7 @@ if (!$success) {
     die($db->error);
 }
  //対象のメーカー、リップ名とurlの格納
-$stmt->bind_result($maker, $name, $script);
+$stmt->bind_result($maker, $name, $product_name, $product_id, $product_jpg, $product_info1, $product_info2, $msmaflink_id);
 
 //アクセスチェックのリセット
 unset($_SESSION['diagnosis']);
@@ -59,9 +59,18 @@ unset($_SESSION['diagnosis']);
                 <div class="lip_result_name">
                     <p>▼ <?php echo h($maker); ?> 『<?php echo h($name); ?>』</p>
                 </div>
-                <?php $escape = h($script);
-                echo d($escape);
-                ?>
+                <!-- START MoshimoAffiliateEasyLink -->
+                <script type="text/javascript">
+                (function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+                b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+                ||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+                c.getElementById(a)||(d=c.createElement(f),d.src=g,
+                d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+                (window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+                msmaflink({"n":"<?php echo h($product_name); ?>","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"<?php echo h($product_info1); ?>","p":["<?php echo h($product_jpg); ?>"],"u":{"u":"<?php echo h($product_info2); ?>","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"<?php echo h($product_info2); ?>","a_id":<?php echo h($product_id); ?>,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"<?php echo h($msmaflink_id); ?>","s":"s"});
+                </script>
+                <div id="msmaflink-<?php echo h($msmaflink_id); ?>">リンク</div>
+                <!-- MoshimoAffiliateEasyLink END -->
             </div>
             <?php } ?>
             <div class="back_home">
