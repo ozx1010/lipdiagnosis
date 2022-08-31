@@ -67,7 +67,7 @@ unset($_SESSION['diagnosis']);
                 c.getElementById(a)||(d=c.createElement(f),d.src=g,
                 d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
                 (window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
-                msmaflink({"n":"<?php echo h($product_name); ?>","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"<?php echo h($product_info1); ?>","p":["<?php echo h($product_jpg); ?>"],"u":{"u":"<?php echo h($product_info2); ?>","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"<?php echo h($product_info2); ?>","a_id":<?php echo h($product_id); ?>,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"<?php echo h($msmaflink_id); ?>","s":"s"});
+                msmaflink({"n":"<?php echo h($product_name); ?>","b":"","t":"","d":"https:\/\/thumbnail.image.rakuten.co.jp","c_p":"<?php echo h($product_info1); ?>","p":["<?php echo escape_white_list($product_jpg); ?>"],"u":{"u":"<?php echo h($product_info2); ?>","t":"rakuten","r_v":""},"v":"2.1","b_l":[{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"<?php echo h($product_info2); ?>","a_id":<?php echo h($product_id); ?>,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1}],"eid":"<?php echo h($msmaflink_id); ?>","s":"s"});
                 </script>
                 <div id="msmaflink-<?php echo h($msmaflink_id); ?>">リンク</div>
                 <!-- MoshimoAffiliateEasyLink END -->

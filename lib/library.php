@@ -7,12 +7,13 @@ function h($value) {
     return htmlspecialchars($value, ENT_QUOTES);
 }
 
-//デコード処理
-function d($value) {
-    return html_entity_decode($value, ENT_QUOTES);
+//エスケープ処理(一部ホワイトリスト化)
+function escape_white_list($value) {
+    $value = h($value);
+    return preg_replace('/&quot;/', '"', $value);
 }
 
-db接続(本番)
+// db接続(本番)
 function dbconnect() {
     $db = new mysqli('localhost', 'xs425403_ozx1010', 'zpzw5951', 'xs425403_lipdiagnosis');
     if(!$db) {
