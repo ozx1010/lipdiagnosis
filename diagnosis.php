@@ -153,10 +153,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <input type="radio" name="type" value="" id="type_3">
                             <label for="type_3"></label>
                         </div> -->
-                        <!-- <div class="question_choice">
-                            <input type="radio" name="type" value="ティントリップ" id="type_4">
-                            <label for="type_4">ティントリップ</label>
-                        </div> -->
+                        <div class="question_choice">
+                            <input type="radio" name="type" value="ティントリップ" id="type_3">
+                            <label for="type_3">ティントリップ</label>
+                        </div>
                     </div>
                 </div>
                 <br>
