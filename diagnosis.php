@@ -146,17 +146,17 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <label for="type_1">リップスティック</label>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="type" value="リップグロス" id="type_2">
-                            <label for="type_2">リップグロス</label>
+                            <input type="radio" name="type" value="リップグロス/リキッドルージュ" id="type_2">
+                            <label for="type_2">リップグロス/リキッドルージュ</label>
                         </div>
-                        <div class="question_choice">
-                            <input type="radio" name="type" value="リキッドルージュ" id="type_3">
-                            <label for="type_3">リキッドルージュ</label>
-                        </div>
-                        <div class="question_choice">
+                        <!-- <div class="question_choice">
+                            <input type="radio" name="type" value="" id="type_3">
+                            <label for="type_3"></label>
+                        </div> -->
+                        <!-- <div class="question_choice">
                             <input type="radio" name="type" value="ティントリップ" id="type_4">
                             <label for="type_4">ティントリップ</label>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <br>
