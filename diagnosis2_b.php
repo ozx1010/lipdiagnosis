@@ -70,20 +70,24 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <p>Q2.好みのリップの質感</p>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="texture" value="シアー" id="texture_1">
-                            <label for="texture_1">シアー</label>
+                            <input type="radio" name="texture" value="ウォータータイプ" id="texture_1">
+                            <label for="texture_1">ウォータータイプ</label>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="texture" value="マット" id="texture_2">
-                            <label for="texture_2">マット</label>
+                            <input type="radio" name="texture" value="オイルタイプ" id="texture_2">
+                            <label for="texture_2">オイルタイプ</label>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="texture" value="ラメ" id="texture_3">
-                            <label for="texture_3">ラメ</label>
+                            <input type="radio" name="texture" value="バームタイプ" id="texture_3">
+                            <label for="texture_3">バームタイプ</label>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="texture" value="ツヤ" id="texture_4">
-                            <label for="texture_4">ツヤ</label>
+                            <input type="radio" name="texture" value="グロス・リキッドタイプ" id="texture_4">
+                            <label for="texture_4">グロス・リキッドタイプ</label>
+                        </div>
+                        <div class="question_choice">
+                            <input type="radio" name="texture" value="パックタイプ" id="texture_5">
+                            <label for="texture_5">パックタイプ</label>
                         </div>
                     </div>
                 </div>
