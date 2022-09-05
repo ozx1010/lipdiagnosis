@@ -41,7 +41,7 @@ $_SESSION['start'] = 'ok';
             </div>
             <div class="content_str_btn">
                 <div class="content_btn">
-                    <a href="diagnosis.php">診断開始！</a>
+                    <a href="diagnosis1.php">診断開始！</a>
                 </div>
             </div>
         </div>

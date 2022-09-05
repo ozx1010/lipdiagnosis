@@ -6,7 +6,7 @@ session_start();
 require('lib/library.php');
 
 //diagnosis.phpアクセスチェック
-if (!isset($_SESSION['diagnosis'])) {
+if (!isset($_SESSION['diagnosis1']) || !isset($_SESSION['diagnosis2']) || !isset($_SESSION['diagnosis3'])) {
     header('Location: .');
     exit();
 }
@@ -28,7 +28,9 @@ if (!$success) {
 $stmt->bind_result($maker, $name, $product_name, $product_id, $product_jpg, $product_info1, $product_info2, $msmaflink_id);
 
 //アクセスチェックのリセット
-unset($_SESSION['diagnosis']);
+unset($_SESSION['diagnosis1']);
+unset($_SESSION['diagnosis2']);
+unset($_SESSION['diagnosis3']);
 
 // // /テスト
 // echo h($_SESSION['cosmetics']);
