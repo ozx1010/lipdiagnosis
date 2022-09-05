@@ -71,7 +71,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="question_wrapper">
                     <div class="question">
                         <div class="question_text">
-                            <p>Q1.好みのリップの種類</p>
+                            <p>Q1.好みの種類</p>
                         </div>
                         <div class="question_choice">
                             <input type="radio" name="type" value="リップスティック" id="type_1">
