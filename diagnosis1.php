@@ -78,8 +78,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <label for="type_1">リップスティック</label>
                         </div>
                         <div class="question_choice">
-                            <input type="radio" name="type" value="リップグロス/リキッドルージュ" id="type_2">
-                            <label for="type_2">リップグロス/リキッドルージュ</label>
+                            <input type="radio" name="type" value="リップグロス・リキッドルージュ" id="type_2">
+                            <label for="type_2">リップグロス・リキッドルージュ</label>
                         </div>
                         <div class="question_choice">
                             <input type="radio" name="type" value="ティントリップ" id="type_3">
