@@ -85,10 +85,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <input type="radio" name="texture" value="グロス・リキッドタイプ" id="texture_4">
                             <label for="texture_4">グロス・リキッドタイプ</label>
                         </div>
-                        <div class="question_choice">
+                        <!-- <div class="question_choice">
                             <input type="radio" name="texture" value="マットタイプ" id="texture_5">
                             <label for="texture_5">マットタイプ</label>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <br>
