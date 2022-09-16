@@ -87,7 +87,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </div>
                 </div>
-                <br>
                 <div class="<?php if (isset($error['ratio']) && $error['ratio'] === 'blank') {
                     echo h('question_submit_error');
                  } else {
