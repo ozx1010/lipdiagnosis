@@ -4,6 +4,24 @@ session_start();
 
 //初期画面アクセスチェック
 $_SESSION['start'] = 'ok';
+
+//問い合わせメール処理
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    //formのvalue格納
+    $from = filter_input(INPUT_POST, 'from', FILTER_SANITIZE_STRING);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+
+    //メール送信のための情報準備
+    $to = 'lipdiagnosis@gmail.com';
+    $subject = $from . '様からのお問い合わせ';
+    $headers = 'From: ' . $from;
+
+    //メール送信
+    mb_language("Japanese");
+    mb_internal_encoding("UTF-8");
+    mb_send_mail($to, $subject, $message, $headers);
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,12 +65,25 @@ $_SESSION['start'] = 'ok';
         </div>
         <div class="footer_wrapper">
             <div class="footer_top">
+                <div class="footer_mail">
+                    <p class="footer_mail_str">▼ お問い合わせはこちら</p>
+                    <div class="footer_mail_form">
+                        <form action="" method="post">
+                            <div class="footer_mail_form_address">
+                                <p class="footer_mail_form_str">メールアドレス</p><input type="text" name="from" class="mail_text">
+                            </div>
+                            <div class="footer_mail_form_content">
+                                <p class="footer_mail_form_str">お問い合わせ内容</p><textarea name="message" class="content_text"></textarea>
+                            </div>
+                            <button type="submit" class="footer_mail_form_send">
+                              <p>送信</p>
+                            </button>
+                        </form>
+                    </div>
+                </div>
                 <div class="footer_img">
                     <a href="."><img src="images/lip_diagnosis_footer.png" alt=""></a>
                 </div>
-                <!-- <div class="footer_contact">
-                    <a href="ozx1010@outlook.jp">お問い合わせ</a>
-                </div> -->
                 <div class="footer_copyright">
                     <p>&copy; 2022 Yutaro Ozumi</p>
                 </div>
