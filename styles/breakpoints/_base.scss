@@ -29,8 +29,8 @@ a {
     }
 }
 
-.home, .home_error {
-    padding-top: 20px;
+.home, .home_error, .footer_mail_str {
+    padding: 20px 0 10px 0;
 
     & a {
         text-decoration: underline;
@@ -154,9 +154,7 @@ a {
         padding-top: 40px;
 
         & .content_btn {
-            width: 50%;
-            min-width: 70px;
-            max-width: 140px;
+            width: 120px;
             background-color: #FF66FF;
             margin: 0 auto;
             border-radius: 10px;
@@ -239,9 +237,7 @@ a {
         padding-top: 30px;
 
         & .submit_btn {
-            width: 50%;
-            min-width: 70px;
-            max-width: 140px;
+            width: 120px;
             background-color: #FF66FF;
             margin: 0 auto;
             border-radius: 10px;
@@ -269,6 +265,81 @@ a {
     }
 }
 
+.inquiry_str, .inquiry_str_error {
+    padding-top: 20px;
+    text-align: center;
+
+    & .error_str {
+        padding-bottom: 20px;
+        font-size: 17px;
+    }
+
+    &_main {
+        font-size: 17px;
+    }
+
+    &_sub {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+}
+
+.mail_form, .mail_form_error {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 15px;
+
+    &_address, &_content {
+        margin: 10px 10px 20px 10px;
+        text-align: left;
+        overflow: hidden;
+
+        & textarea {
+            width: 100%;
+        }
+    }
+
+    &_send {
+        width: 80px;
+        background-color: #FF66FF;
+        border-radius: 10px;
+        border: solid 1px #FF66FF;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+        &:hover {
+            border: solid 1px #FF99FF;
+            background-color: #FF99FF;
+        }
+
+        &:active {
+            border: solid 1px #FFCCCC;
+            background-color: #FFCCCC;
+        }
+
+        & p {
+            font-family: 'Kaisei Opti', serif;
+            font-size: 15px;
+            display: block;
+            padding: 10px 5px;
+        }
+    }
+}
+
+.thanks {
+    text-align: center;
+
+    & .thanks_headline {
+        font-size: 17px;
+        padding: 30px 0;
+    }
+
+    & .thanks_str {
+        font-size: 15px;
+    }
+}
+
 .footer_wrapper {
     min-height: 100vh;
     position: relative;
@@ -282,65 +353,6 @@ a {
         position: absolute;
         bottom: 0;
         padding-bottom: 10px;
-
-        & .footer_mail {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 30px;
-
-            &_str {
-                margin-bottom: 5px;
-            }
-
-            &_form {
-                background-color: #FFCCFF;
-                margin: 0 auto;
-                padding: 15px;
-                border-radius: 10px;
-                border: solid 1px #FFCCFF;
-                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
-
-                &_address, &_content {
-                    margin: 10px;
-                    text-align: left;
-                    overflow: hidden;
-
-                    & textarea {
-                        width: 100%;
-                    }
-                }
-
-                &_send {
-                    width: 80px;
-                    background-color: #FF66FF;
-                    margin: 0 auto;
-                    border-radius: 10px;
-                    border: solid 1px #FF66FF;
-                    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
-
-                    & p {
-                        font-family: 'Kaisei Opti', serif;
-                        font-size: 15px;
-                        display: block;
-                        padding: 10px 5px;
-                    }
-                }
-            }
-        }
-
-        & .footer_img {
-            padding: 5px 0 0 0;
-        }
-
-        & .footer_contact {
-            padding-bottom: 40px;
-            font-size: 15px;
-            text-decoration: underline;
-
-            & a {
-                color: #8B4513;
-            }
-        }
 
         & .footer_copyright {
             font-size: 12px;

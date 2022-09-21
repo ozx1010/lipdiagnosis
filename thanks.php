@@ -2,8 +2,17 @@
 //セッション維持
 session_start();
 
-//初期画面アクセスチェック
-$_SESSION['start'] = 'ok';
+//ライブラリ呼び出し
+require('lib/library.php');
+
+//問い合わせ画面アクセスチェック
+if (!isset($_SESSION['inquiry'])) {
+    header('Location: .');
+    exit();
+}
+
+//アクセスチェックのリセット
+unset($_SESSION['inquiry']);
 ?>
 
 <!DOCTYPE html>
@@ -20,33 +29,26 @@ $_SESSION['start'] = 'ok';
 </head>
 <body>
     <div class="container">
-        <div class="header_top">
+        <div class="header">
             <a href="."><img src="images/lip_diagnosis_header.png" alt=""></a>
         </div>
-        <div class="content">
-            <div class="content_img">
-                <div class="img_wrapper">
-                    <img class="sp" src="images/NKJ56_ripglosskesyouhin_TP_V4_3.jpg" alt="">
-                    <img class="pc" src="images/NKJ56_ripglosskesyouhin_TP_V_6.jpg" alt="">
-                </div>
-                <div class="content_str">
-                    <p>あなたに合うリップを診断します</p>
-                </div>
-                <div class="content_arrow">
-                    <img src="images/arrow_under.png" alt="">
-                    <div class="content_arrow_str">
-                        <p>start</p>
-                    </div>
-                </div>
+        <div class="thanks">
+            <div class="thanks_headline">
+                <p>お問い合わせが送信されました</p>
             </div>
-            <div class="content_str_btn">
-                <div class="content_btn">
-                    <a href="diagnosis1.php">診断開始！</a>
-                </div>
+            <div class="thanks_str">
+                <p>お問い合わせいただきありがとうございます。
+                <br>
+                    後日回答メールをお送りいたします。
+                </p>
+            </div>
+            <div class="back_home">
+                <p><a href=".">ホームへ</a></p>
             </div>
         </div>
+
         <div class="footer_wrapper">
-            <div class="footer_top">
+            <div class="footer">
                 <p class="footer_mail_str"><a href="./inquiry.php">お問い合わせはこちら</a></p>
                 <div class="footer_img">
                     <a href="."><img src="images/lip_diagnosis_footer.png" alt=""></a>

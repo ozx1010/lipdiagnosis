@@ -28,10 +28,10 @@ a {
   color: #FF0000;
 }
 
-.home, .home_error {
-  padding-top: 20px;
+.home, .home_error, .footer_mail_str {
+  padding: 20px 0 10px 0;
 }
-.home a, .home_error a {
+.home a, .home_error a, .footer_mail_str a {
   text-decoration: underline;
 }
 
@@ -142,9 +142,7 @@ a {
   padding-top: 40px;
 }
 .content_str_btn .content_btn, .content_question_str_btn .content_btn, .content_error_str_btn .content_btn {
-  width: 50%;
-  min-width: 70px;
-  max-width: 140px;
+  width: 120px;
   background-color: #FF66FF;
   margin: 0 auto;
   border-radius: 10px;
@@ -214,9 +212,7 @@ a {
   padding-top: 30px;
 }
 .content .question_submit .submit_btn, .content .question_submit_error .submit_btn, .content_question .question_submit .submit_btn, .content_question .question_submit_error .submit_btn, .content_error .question_submit .submit_btn, .content_error .question_submit_error .submit_btn {
-  width: 50%;
-  min-width: 70px;
-  max-width: 140px;
+  width: 120px;
   background-color: #FF66FF;
   margin: 0 auto;
   border-radius: 10px;
@@ -239,6 +235,70 @@ a {
   background-color: #FFCCCC;
 }
 
+.inquiry_str, .inquiry_str_error {
+  padding-top: 20px;
+  text-align: center;
+}
+.inquiry_str .error_str, .inquiry_str_error .error_str {
+  padding-bottom: 20px;
+  font-size: 17px;
+}
+.inquiry_str_main, .inquiry_str_error_main {
+  font-size: 17px;
+}
+.inquiry_str_sub, .inquiry_str_error_sub {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.mail_form, .mail_form_error {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 15px;
+}
+.mail_form_address, .mail_form_content, .mail_form_error_address, .mail_form_error_content {
+  margin: 10px 10px 20px 10px;
+  text-align: left;
+  overflow: hidden;
+}
+.mail_form_address textarea, .mail_form_content textarea, .mail_form_error_address textarea, .mail_form_error_content textarea {
+  width: 100%;
+}
+.mail_form_send, .mail_form_error_send {
+  width: 80px;
+  background-color: #FF66FF;
+  border-radius: 10px;
+  border: solid 1px #FF66FF;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.mail_form_send:hover, .mail_form_error_send:hover {
+  border: solid 1px #FF99FF;
+  background-color: #FF99FF;
+}
+.mail_form_send:active, .mail_form_error_send:active {
+  border: solid 1px #FFCCCC;
+  background-color: #FFCCCC;
+}
+.mail_form_send p, .mail_form_error_send p {
+  font-family: "Kaisei Opti", serif;
+  font-size: 15px;
+  display: block;
+  padding: 10px 5px;
+}
+
+.thanks {
+  text-align: center;
+}
+.thanks .thanks_headline {
+  font-size: 17px;
+  padding: 30px 0;
+}
+.thanks .thanks_str {
+  font-size: 15px;
+}
+
 .footer_wrapper {
   min-height: 100vh;
   position: relative;
@@ -252,55 +312,6 @@ a {
   position: absolute;
   bottom: 0;
   padding-bottom: 10px;
-}
-.footer_wrapper .footer .footer_mail, .footer_wrapper .footer_top .footer_mail {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 30px;
-}
-.footer_wrapper .footer .footer_mail_str, .footer_wrapper .footer_top .footer_mail_str {
-  margin-bottom: 5px;
-}
-.footer_wrapper .footer .footer_mail_form, .footer_wrapper .footer_top .footer_mail_form {
-  background-color: #FFCCFF;
-  margin: 0 auto;
-  padding: 15px;
-  border-radius: 10px;
-  border: solid 1px #FFCCFF;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
-}
-.footer_wrapper .footer .footer_mail_form_address, .footer_wrapper .footer .footer_mail_form_content, .footer_wrapper .footer_top .footer_mail_form_address, .footer_wrapper .footer_top .footer_mail_form_content {
-  margin: 10px;
-  text-align: left;
-  overflow: hidden;
-}
-.footer_wrapper .footer .footer_mail_form_address textarea, .footer_wrapper .footer .footer_mail_form_content textarea, .footer_wrapper .footer_top .footer_mail_form_address textarea, .footer_wrapper .footer_top .footer_mail_form_content textarea {
-  width: 100%;
-}
-.footer_wrapper .footer .footer_mail_form_send, .footer_wrapper .footer_top .footer_mail_form_send {
-  width: 80px;
-  background-color: #FF66FF;
-  margin: 0 auto;
-  border-radius: 10px;
-  border: solid 1px #FF66FF;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
-}
-.footer_wrapper .footer .footer_mail_form_send p, .footer_wrapper .footer_top .footer_mail_form_send p {
-  font-family: "Kaisei Opti", serif;
-  font-size: 15px;
-  display: block;
-  padding: 10px 5px;
-}
-.footer_wrapper .footer .footer_img, .footer_wrapper .footer_top .footer_img {
-  padding: 5px 0 0 0;
-}
-.footer_wrapper .footer .footer_contact, .footer_wrapper .footer_top .footer_contact {
-  padding-bottom: 40px;
-  font-size: 15px;
-  text-decoration: underline;
-}
-.footer_wrapper .footer .footer_contact a, .footer_wrapper .footer_top .footer_contact a {
-  color: #8B4513;
 }
 .footer_wrapper .footer .footer_copyright, .footer_wrapper .footer_top .footer_copyright {
   font-size: 12px;
@@ -328,7 +339,7 @@ a {
     font-size: 15px;
   }
 }
-.header_top, .footer_top {
+.header_top, .footer_top, .inquiry_str {
   -webkit-animation-name: fade-in-top-cnt;
           animation-name: fade-in-top-cnt;
   -webkit-animation-duration: 0.7s;
@@ -338,7 +349,7 @@ a {
   opacity: 0;
 }
 
-.content, .content_question, .question_submit, .home {
+.content, .content_question, .question_submit, .home, .mail_form {
   -webkit-animation-name: fade-in-top-cnt;
           animation-name: fade-in-top-cnt;
   -webkit-animation-duration: 0.9s;

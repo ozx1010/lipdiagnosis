@@ -1,11 +1,11 @@
-.header_top, .footer_top {
+.header_top, .footer_top, .inquiry_str {
     animation-name: fade-in-top-cnt;
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
-.content, .content_question, .question_submit, .home {
+.content, .content_question, .question_submit, .home, .mail_form {
     animation-name: fade-in-top-cnt;
     animation-duration: 0.9s;
     animation-fill-mode: forwards;
