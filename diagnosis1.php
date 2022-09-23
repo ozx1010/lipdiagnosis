@@ -107,12 +107,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="footer_wrapper">
             <div class="footer">
+                <p class="footer_mail_str"><a href="./inquiry.php">お問い合わせはこちら</a></p>
                 <div class="footer_img">
                     <a href="."><img src="images/lip_diagnosis_footer.png" alt=""></a>
                 </div>
-                <!-- <div class="footer_contact">
-                    <a href="ozx1010@outlook.jp">お問い合わせ</a>
-                </div> -->
                 <div class="footer_copyright">
                     <p>&copy; 2022 Yutaro Ozumi</p>
                 </div>
