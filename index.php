@@ -52,7 +52,7 @@ $_SESSION['start'] = 'ok';
                     <a href="."><img src="images/lip_diagnosis_footer.png" alt=""></a>
                 </div>
                 <div class="footer_copyright">
-                    <p>&copy; 2022 Yutaro Ozumi</p>
+                    <p>Copyright (c) 2022 ozx1010</p>
                 </div>
             </div>
         </div>
