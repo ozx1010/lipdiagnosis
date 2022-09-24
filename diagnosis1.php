@@ -113,8 +113,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="footer_copyright">
                     <p>Copyright (c) 2022 ozx1010
-                    <br>
-                    <br>
                     Released under the MIT license
                     <br>
                     https://github.com/ozx1010/lipdiagnosis/blob/master/LICENCE</p>
