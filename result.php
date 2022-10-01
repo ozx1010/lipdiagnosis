@@ -54,7 +54,7 @@ unset($_SESSION['diagnosis3']);
         </div>
         <div class="content">
             <div class="result_str">
-                <p>あなたにオススメのリップは・・・</p>
+                <p>あなたにおすすめのリップは・・・</p>
             </div>
             <?php while ($stmt->fetch()) { ?>
             <div class="lip_result">

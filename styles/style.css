@@ -112,7 +112,7 @@ a {
   opacity: 0.85;
 }
 .content_img .content_str, .content_question_img .content_str, .content_error_img .content_str {
-  width: 250px;
+  width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,7 +120,7 @@ a {
 }
 .content_img .content_str p, .content_question_img .content_str p, .content_error_img .content_str p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
 }
 .content_img .content_arrow, .content_question_img .content_arrow, .content_error_img .content_arrow {
   position: absolute;
@@ -319,7 +319,7 @@ a {
 
 @media screen and (min-width: 530px) {
   .content .content_str, .content_question .content_str, .content_error .content_str {
-    width: 300px;
+    width: 400px;
   }
   .content .content_str p, .content_question .content_str p, .content_error .content_str p {
     font-size: 17px;

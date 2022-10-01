@@ -30,7 +30,7 @@ $_SESSION['start'] = 'ok';
                     <img class="pc" src="images/NKJ56_ripglosskesyouhin_TP_V_6.jpg" alt="">
                 </div>
                 <div class="content_str">
-                    <p>あなたにオススメのリップを診断します</p>
+                    <p>あなたにおすすめのリップを診断します</p>
                 </div>
                 <div class="content_arrow">
                     <img src="images/arrow_under.png" alt="">
