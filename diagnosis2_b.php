@@ -67,7 +67,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="question_wrapper">
                     <div class="question">
                         <div class="question_text">
-                            <p>Q2.ティントリップの好みの種類</p>
+                            <p>Q2.好みのティントリップの種類</p>
                         </div>
                         <div class="question_choice">
                             <input type="radio" name="texture" value="ウォータータイプ" id="texture_1">
