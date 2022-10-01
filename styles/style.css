@@ -120,7 +120,7 @@ a {
 }
 .content_img .content_str p, .content_question_img .content_str p, .content_error_img .content_str p {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
 }
 .content_img .content_arrow, .content_question_img .content_arrow, .content_error_img .content_arrow {
   position: absolute;
