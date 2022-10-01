@@ -11,7 +11,7 @@ Three questions will introduce the best lip to the respondent.
 
 Select your favorite condition from 3 questions and display the product link of the lip that matches the condition.
 
-![Demo](https://user-images.githubusercontent.com/112053470/192100551-227bfae3-5a63-45ce-9b7a-4b4f5c89bb14.gif)
+![Demo_1](https://user-images.githubusercontent.com/112053470/192103630-58ca720d-83cf-4556-bb1d-e6ceb74355db.gif)
 
 
 ## Requirement
