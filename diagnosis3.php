@@ -21,7 +21,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //formのvalue格納
     $cosmetics = h($_POST['cosmetics']);
-    // $cosmetics = filter_input(INPUT_POST, 'cosmetics', FILTER_SANITIZE_STRING);
 
     //空欄チェック
     if ($cosmetics === null) {

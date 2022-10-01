@@ -21,7 +21,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //formのvalue格納
     $type = h($_POST['type']);
-    // $type = filter_input(INPUT_POST, 'type', FILTER_SANITIZE_STRING);
 
      //空欄チェック
     if ($type === null) {

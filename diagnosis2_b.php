@@ -21,7 +21,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //formのvalue格納
     $texture = h($_POST['texture']);
-    // $texture = filter_input(INPUT_POST, 'texture', FILTER_SANITIZE_STRING);
 
     //空欄チェック
     if ($texture === null) {
