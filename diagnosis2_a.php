@@ -20,7 +20,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['diagnosis2'] = 'ok';
 
     //formのvalue格納
-    $texture = filter_input(INPUT_POST, 'texture', FILTER_SANITIZE_STRING);
+    $texture = h($_POST['texture']);
+    // $texture = filter_input(INPUT_POST, 'texture', FILTER_SANITIZE_STRING);
 
     //空欄チェック
     if ($texture === null) {

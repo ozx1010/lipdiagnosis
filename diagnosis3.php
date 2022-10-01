@@ -20,7 +20,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['diagnosis3'] = 'ok';
 
     //formのvalue格納
-    $cosmetics = filter_input(INPUT_POST, 'cosmetics', FILTER_SANITIZE_STRING);
+    $cosmetics = h($_POST['cosmetics']);
+    // $cosmetics = filter_input(INPUT_POST, 'cosmetics', FILTER_SANITIZE_STRING);
 
     //空欄チェック
     if ($cosmetics === null) {

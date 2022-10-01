@@ -20,7 +20,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['diagnosis1'] = 'ok';
 
     //formのvalue格納
-    $type = filter_input(INPUT_POST, 'type', FILTER_SANITIZE_STRING);
+    $type = h($_POST['type']);
+    // $type = filter_input(INPUT_POST, 'type', FILTER_SANITIZE_STRING);
 
      //空欄チェック
     if ($type === null) {

@@ -9,8 +9,11 @@ require('lib/library.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //formのvalue格納
-    $from = filter_input(INPUT_POST, 'from', FILTER_SANITIZE_STRING);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $from = h($_POST['from']);
+    $message = h($_POST['message']);
+
+    // $from = filter_input(INPUT_POST, 'from', FILTER_SANITIZE_EMAIL);
+    // $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
     //入力内容有無確認
     if ($from === '' || $message === '') {
