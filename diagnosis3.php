@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $cosmetics = h($_POST['cosmetics']);
 
     //空欄チェック
-    if ($cosmetics === null) {
+    if ($cosmetics === '') {
         $error['ratio'] = 'blank';
     } else {
         //セッション変数にラジオボタンのvalueを格納

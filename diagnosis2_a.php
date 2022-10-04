@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $texture = h($_POST['texture']);
 
     //空欄チェック
-    if ($texture === null) {
+    if ($texture === '') {
         $error['ratio'] = 'blank';
     } else {
         //セッション変数にラジオボタンのvalueを格納
