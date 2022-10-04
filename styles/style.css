@@ -313,6 +313,9 @@ a {
   bottom: 0;
   padding-bottom: 10px;
 }
+.footer_wrapper .footer .footer_img, .footer_wrapper .footer_top .footer_img {
+  padding-top: 20px;
+}
 .footer_wrapper .footer .footer_copyright, .footer_wrapper .footer_top .footer_copyright {
   font-size: 12px;
 }

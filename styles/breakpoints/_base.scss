@@ -354,6 +354,10 @@ a {
         bottom: 0;
         padding-bottom: 10px;
 
+        & .footer_img {
+            padding-top: 20px;
+        }
+
         & .footer_copyright {
             font-size: 12px;
         }
