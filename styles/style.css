@@ -29,7 +29,7 @@ a {
 }
 
 .home, .home_error, .footer_mail_str, .footer_twitter_str {
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
 }
 .home a, .home_error a, .footer_mail_str a, .footer_twitter_str a {
   text-decoration: underline;
