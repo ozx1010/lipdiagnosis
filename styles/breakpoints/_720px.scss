@@ -7,6 +7,10 @@
         display: block !important;
     }
 
+    .footer_mail_str, .footer_twitter_str {
+        padding: 50px 50px 0 70px;
+    }
+
     .content, .content_question, .content_error {
         & .content_str {
             & p {

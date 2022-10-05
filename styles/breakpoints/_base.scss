@@ -29,8 +29,17 @@ a {
     }
 }
 
-.home, .home_error, .footer_mail_str, .footer_twitter_str {
-    padding: 10px 0 0 0;
+.home, .home_error {
+    padding: 20px 0 0 0;
+
+    & a {
+        text-decoration: underline;
+    }
+}
+
+.footer_mail_str, .footer_twitter_str {
+    padding: 25px 0 0 0;
+    font-size: 16px;
 
     & a {
         text-decoration: underline;
@@ -355,7 +364,7 @@ a {
         padding-bottom: 10px;
 
         & .footer_img {
-            padding-top: 10px;
+            padding-top: 50px;
         }
 
         & .footer_copyright {

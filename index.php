@@ -47,8 +47,8 @@ $_SESSION['start'] = 'ok';
         </div>
         <div class="footer_wrapper">
             <div class="footer_top">
-                <p class="footer_twitter_str"><a href="https://twitter.com/lipdiagnosis">&#9658; twitterはこちら</a></p>
-                <p class="footer_mail_str"><a href="./inquiry.php">&#9658; お問い合わせはこちら</a></p>
+                <p class="footer_twitter_str"><a href="https://twitter.com/lipdiagnosis">twitterはこちら</a></p>
+                <p class="footer_mail_str"><a href="./inquiry.php">お問い合わせはこちら</a></p>
                 <div class="footer_img">
                     <a href="."><img src="images/lip_diagnosis_footer.png" alt=""></a>
                 </div>

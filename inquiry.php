@@ -89,6 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="footer_wrapper">
             <div class="footer">
+                <p class="footer_twitter_str"><a href="https://twitter.com/lipdiagnosis">twitterはこちら</a></p>
                 <p class="footer_mail_str"><a href="./inquiry.php">お問い合わせはこちら</a></p>
                 <div class="footer_img">
                     <a href="."><img src="images/lip_diagnosis_footer.png" alt=""></a>

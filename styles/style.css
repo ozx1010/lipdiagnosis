@@ -28,10 +28,18 @@ a {
   color: #FF0000;
 }
 
-.home, .home_error, .footer_mail_str, .footer_twitter_str {
-  padding: 10px 0 0 0;
+.home, .home_error {
+  padding: 20px 0 0 0;
 }
-.home a, .home_error a, .footer_mail_str a, .footer_twitter_str a {
+.home a, .home_error a {
+  text-decoration: underline;
+}
+
+.footer_mail_str, .footer_twitter_str {
+  padding: 25px 0 0 0;
+  font-size: 16px;
+}
+.footer_mail_str a, .footer_twitter_str a {
   text-decoration: underline;
 }
 
@@ -314,13 +322,17 @@ a {
   padding-bottom: 10px;
 }
 .footer_wrapper .footer .footer_img, .footer_wrapper .footer_top .footer_img {
-  padding-top: 10px;
+  padding-top: 50px;
 }
 .footer_wrapper .footer .footer_copyright, .footer_wrapper .footer_top .footer_copyright {
   font-size: 12px;
 }
 
 @media screen and (min-width: 530px) {
+  .footer_mail_str, .footer_twitter_str {
+    display: inline-block;
+    padding: 40px 20px 0 40px;
+  }
   .content .content_str, .content_question .content_str, .content_error .content_str {
     width: 400px;
   }
@@ -334,6 +346,9 @@ a {
   }
   .pc {
     display: block !important;
+  }
+  .footer_mail_str, .footer_twitter_str {
+    padding: 50px 50px 0 70px;
   }
   .content .content_str p, .content_question .content_str p, .content_error .content_str p {
     font-size: 20px;
