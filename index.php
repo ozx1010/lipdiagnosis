@@ -12,6 +12,11 @@ $_SESSION['start'] = 'ok';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Twitter:card" content="summary_large_image">
+    <meta name="Twitter:site" content="@lipdiagnosis">
+    <meta name="Twitter:title" content="リップ診断">
+    <meta name="Twitter:description" content="あなたにおすすめのリップを見つけましょう！">
+    <meta name="Twitter:image" content="https://lipdiagnosis.com/images/twitter_img.png">
     <link rel="icon" href="images/favicon.ico">
     <title>リップ診断</title>
     <link rel="stylesheet" href="styles/style.css">
